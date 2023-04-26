@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="description" content="" />
+    <meta name="author" content="Tarmica Chiwara" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <title>Tarmica Chiwara</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/css/all.min.css"
+      integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc="
+      crossorigin="anonymous"
+    />
+    <link
+      href="{{ url_for('static', filename='particles.css') }}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='page.css') }}"
+      rel="stylesheet"
+    />
+    <link href="{{ url_for('static', filename='nav.css') }}" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="tsparticles"></div>
+
+    <div class="navbar-title">
+      <h1 class="navbar-title">For Nyasha Chiwara</h1>
+    </div>
+
+    <div class="flex-container">
+      <div class="row">
+        <div>
+          <img
+            src="{{ url_for('static', filename='images/profile.png') }}"
+            alt="photo of Tarmica Chiwara"
+            class="profile"
+          />
+          <h2>Tarmica Sean Chiwara</h2>
+          <h3
+            style="
+              font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                'Helvetica Neue', sans-serif;
+            "
+          >
+            Computer Engineer
+          </h3>
+        </div>
+        <div class="row" id="aboutme">
+          <h4 id="AboutTab">About Me</h4>
+          <!--<p>
+                I am currently enrolled at <a href="https://www.cut.ac.zw">Chinhoyi University of Technology</a>
+                as a Computer Engineering Major and also working part-time as a freelance developer where
+                I focus on building building full-stack Web Apps, Progressive Web Apps (PWAs) and 
+                Mobile Apps. 
+                </p>
+                <p>
+                I am very passionate about security.
+                I spend a lot of time finding vulnerabilities, bug hunting and writing exploits to carry out ethical hacking.
+                That being said, I also enjoy building tools to automate tasks and make life easier. This manifests through my embedded systems  skills which I have demonstrated in listed projects and have no problem implementing them on demand.
+                </p> -->
+          <p>
+            I dont know why I thought I could write a proper aboutme. I have
+            edited this plenty of times now. If you are interested in
+            professional work,
+            <a href="{{ url_for('static', filename='resume.pdf') }}"
+              >check out my resume</a
+            >
+          </p>
+        </div>
+        <a href="{{ url_for('static', filename='resume.pdf') }}"
+          ><i class="fa fa-files-o" aria-hidden="true">My Resume</i></a
+        >
+        <a href="https://github.com/lordskyzw"
+          ><i class="fab fa-2x fa-github"></i
+        ></a>
+        <a href="https://instagram.com/lordskyzw"
+          ><i class="fab fa-2x fa-instagram"></i
+        ></a>
+        <a href="https://twitter.com/tarmicachiwara"
+          ><i class="fab fa-2x fa-twitter"></i
+        ></a>
+        <a href="https://linkedin.com/in/tarimica-chiwara-893a49213"
+          ><i class="fab fa-2x fa-linkedin-in"></i
+        ></a>
+      </div>
+
+      <!--<div class="row">
+            <h3 id="projectsid">Projects</h3>
+            <div class="project-description">
+                <h4><u>Skynet</u></h4>
+                <p>
+                    In this project, I implemented a master-slave botnet to serve multiple functions for adminstration purposes. This project was written in python and then pre compiled so that it is deployed as executables only, bypassing the need to have python installed on host machines.
+                    Ofcourse the malicious potential of this project is not overlooked. It is sustained. This project's source code can be found on my github. Skynet is built using Python3.
+                </p>
+                <a href="https://github.com/lordskyzw/Jailor">Source Code Here</a>
+            </div>
+            <div class="project-description" id="FoodHub">
+                <h4><u>FoodHub</u></h4>
+                <p>
+                    This is an online restaurant that I built in collaboration with my friend <a href="https://github.com/strikay"><i class="fab fa-2x fa-github"></i>STRIVE</a> to deliver food on campus for extra remuneration. It is a simple web app that allows users to create accounts, login and order food. It is built using WAMPP technology.
+                </p>
+                <a href="https://github.com/lordskyzw/FoodHub">Source Code Here</a>
+            </div>
+            <div class="project-description">
+                <h3><u>Utopia</u></h3>
+                <p>
+                    This is my effort to combat the accomodation shortage crisis for the students at my university. Students should have easy access to information on vacant places or places within their parameters such as budget. This is what Utopia tries to achieve. It is built using WAMPP technology.
+                </p>
+                <a href="https://github.com/lordskyzw/Utopia">Source Code Here</a>
+            </div>
+        </div>-->
+    </div>
+
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='index.js') }}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='nav.js') }}"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/js/all.min.js"
+      integrity="sha256-uNYoXefWRqv+PsIF/OflNmwtKM4lStn9yrz2gVl6ymo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/tsparticles@1.17.5/dist/tsparticles.min.js"
+      integrity="sha256-Wcr5q//r5yGozjRl+ToXruCoy75vgiApkKsV30aCns8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='particles2.js') }}"
+    ></script>
+  </body>
+</html>

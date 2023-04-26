@@ -1,0 +1,21 @@
+#tsparticles {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Set the canvas background to a nice color */
+canvas {
+  background-color: #a3ac25;
+}
+
+/* Style the particles with a border and a nice color */
+.particle {
+  border: 1px solid rgb(66, 8, 114);
+  background-color: rgb(85, 7, 129);
+}
